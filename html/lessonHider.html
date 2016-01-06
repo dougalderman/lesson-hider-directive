@@ -1,0 +1,15 @@
+<!--<div>Hi, I'm LessonHider.html </div>
+<br>
+My name is: {{name}} -->
+Lesson is:
+<br><br>
+<!--<div ng-repeat = "lesson in lessons">
+    {{lesson}}
+
+</div> 
+<br><br> -->
+<li class="lessonClass" ng-class="{strikeThrough: lineThrough && selectLineThrough}">{{lessonAtr}}</li>
+<br>
+<button ng-click="dayAlert({lesson: lessonAtr, day: lessonDay})" ng-show="lessonDay" >Click me to find day lesson is active</button>
+<br><br><br><br>
+<!--<input ng-model="lessonAtr" type="text">-->

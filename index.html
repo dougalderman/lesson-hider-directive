@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="directivePractice" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson Hidert</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="lessonCtrl">
+    
+    <input type="checkbox" ng-model="selectLineThrough">Check me to toggle whether or not to put line through lessons on schedule.
+    <br><br>
+    
+    <!--<lesson-hider my-test="Hello There!"></lesson-hider> -->
+    <ul>
+        <lesson-hider ng-repeat="lesson in lessons" lesson-atr="lesson" select-line-through="selectLineThrough" day-alert="announceDay(lesson, day)"></lesson-hider>
+    </ul>
+    <br><br>
+    <!-- <div>
+        {{test}}
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lessonCtrl.js"></script>
+    <script src="js/lessonHider.js"></script>
+    <script src="js/lessonService.js"></script>
+
+</body>
+
+</html>
