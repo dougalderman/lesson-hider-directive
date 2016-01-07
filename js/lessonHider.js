@@ -6,7 +6,8 @@ angular.module('directivePractice')
         scope: {
             lessonAtr: '=',
             selectLineThrough: '=',
-            dayAlert: '&'
+            dayAlert: '&',
+            deleteLesson: '&'
         },
         link: function(scope, elem, attrs) {
             /* console.log('scope = ') + console.log(scope);
@@ -36,6 +37,7 @@ angular.module('directivePractice')
         },
         controller: function($scope, lessonService) {
             $scope.getSchedule = lessonService.getSchedule();
+          
         }
         
     }

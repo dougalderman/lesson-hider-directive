@@ -11,5 +11,7 @@ Lesson is:
 <li class="lessonClass" ng-class="{strikeThrough: lineThrough && selectLineThrough}">{{lessonAtr}}</li>
 <br>
 <button ng-click="dayAlert({lesson: lessonAtr, day: lessonDay})" ng-show="lessonDay" >Click me to find day lesson is active</button>
+<button ng-click="deleteLesson({lessonToRemove: lessonAtr})">Unschedule Me</button>
 <br><br><br><br>
+
 <!--<input ng-model="lessonAtr" type="text">-->

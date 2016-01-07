@@ -12,7 +12,7 @@
     
     <!--<lesson-hider my-test="Hello There!"></lesson-hider> -->
     <ul>
-        <lesson-hider ng-repeat="lesson in lessons" lesson-atr="lesson" select-line-through="selectLineThrough" day-alert="announceDay(lesson, day)"></lesson-hider>
+        <lesson-hider ng-repeat="lesson in lessons" delete-lesson="removeLesson(lessonToRemove)" lesson-atr="lesson" select-line-through="selectLineThrough" day-alert="announceDay(lesson, day)"></lesson-hider>
     </ul>
     <br><br>
     <!-- <div>
