@@ -16,7 +16,7 @@ angular.module('directivePractice')
     $scope.selectLineThrough = true;
     
     $scope.removeLesson = function(lessonToRemove) {
-        var idx = $scope.indexOf(lessonToRemove);
+        var idx = $scope.lessons.indexOf(lessonToRemove);
         $scope.lessons.splice(idx, 1);
     }
     
